@@ -7,13 +7,16 @@ main.cpp
 )
 
 set(HEADER
-
+../include/DataStreams/dataStream.hpp
+../include/DataStreams/dataStreamManager.hpp
 )
 
 add_executable(example
       ${HEADER}
       ${SOURCE}
 )
+
+target_include_directories(example PRIVATE ../include/DataStreams)
 # target_link_libraries(example pthread)
 target_compile_options(example PRIVATE -Werror -Wall -Wextra -Wshadow -Wnon-virtual-dtor -pedantic -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wmisleading-indentation -Wnull-dereference -Wdouble-promotion -Wformat=2)
 # if GCC

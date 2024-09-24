@@ -1,6 +1,6 @@
 #include <iostream>
-#include "../inc/dataStream.hpp"
-#include "../inc/dataStreamManager.hpp"
+#include "dataStream.hpp"
+#include "dataStreamManager.hpp"
 
 #include <thread>
 #include <chrono>
